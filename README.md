@@ -83,6 +83,8 @@ WARNING : Does not support quotation marks ("") inside a tag. Ih there are quota
 |tagName|String|null, but @required|The name of the tag|
 |textStyle|TextStyle|null|The style of the text inside the tag|
 
+As a reminder, if you do not define a text style, the default color of a text is white.
+
 Enjoy Coding !
 
 ## Internal dependencies
