@@ -74,7 +74,7 @@ WARNING : Does not support quotation marks ("") inside a tag. Ih there are quota
 |text|String|""|The text to highlight|
 |textAlign|TextAlign|TextAlign.left|The alignment of the text|
 |defaultTextStyle|TextStyle|null|The style of the text outside the tags|
-|tags|List<TagHighlight>|const []|The list of your tags and their style|
+|tags|List of TagHighlight|const []|The list of your tags and their style|
 
 * Summary of all the available arguments inside TagHighlight class
 
