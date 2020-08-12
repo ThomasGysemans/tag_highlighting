@@ -65,6 +65,8 @@ class Home extends StatelessWidget {
 }
 ```
 
+* WARNING : Does not support quotation marks ("") inside a tag. Ih there are quotation marks, the tag will be ignored. More generally, if the tag is ignored, it's because there is a character inside the tag that is not supported (the French accented letters are supported).
+
 * Summary of all the available arguments inside TagHighlighting Widget
 
 |Name|Type|Default Value|Description|
