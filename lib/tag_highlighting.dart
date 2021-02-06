@@ -81,9 +81,6 @@ class _TagHighlightingState extends State<TagHighlighting> {
           String toHighlight = text.substring(match.start, match.end);
           previous = match.end;
 
-          print("normalText = $normalText \n");
-          print("toHighlight = $toHighlight \n");
-
           spans.add(TextSpan(
             text: normalText
                 .replaceAll("<$tagName>", "")
@@ -97,8 +94,6 @@ class _TagHighlightingState extends State<TagHighlighting> {
                 .replaceAll("</$tagName>", ""),
             style: textStyle,
           ));
-
-          print("spans = $spans");
 
           count++;
 
