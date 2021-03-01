@@ -13,31 +13,30 @@ With this Flutter package, you can apply different styles to different parts of 
 
 It's very easy to install :
 
-* Add in pubspec.yaml file
+- Add in pubspec.yaml file
 
-```
+```yaml
 dependencies:
-    tag_highlighting: ^0.0.1
+  tag_highlighting: ^0.0.1
 ```
 
-
-* Don't forget to update the modifications of the pubspec.yaml file
+- Don't forget to update the modifications of the pubspec.yaml file
 
 ```
 $ flutter pub get
 ```
 
-* Finally, use tag_highlighting in your flutter project
+- Finally, use tag_highlighting in your flutter project
 
-```
-import 'package:tag_highlighting/tag_highlighting.dart';
+```javascript
+import "package:tag_highlighting/tag_highlighting.dart";
 ```
 
 ## Usage
 
 After importing the package into your project, you can use the TagHighlighting Widget :
 
-```
+```java
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -57,7 +56,7 @@ class Home extends StatelessWidget {
               fontWeight: FontWeight.w900,
               color: Colors.redAccent,
               fontSize: 16,
-            ), 
+            ),
           ),
         ],
       ),
@@ -68,21 +67,21 @@ class Home extends StatelessWidget {
 
 WARNING : Does not support quotation marks ("") inside a tag. Ih there are quotation marks, the tag will be ignored. More generally, if the tag is ignored, it's because there is a character inside the tag that is not supported (the French accented letters are supported).
 
-* Summary of all the available arguments inside TagHighlighting Widget
+- Summary of all the available arguments inside TagHighlighting Widget
 
-|Name|Type|Default Value|Description|
-|----|----|-------------|-----------|
-|text|String|""|The text to highlight|
-|textAlign|TextAlign|TextAlign.left|The alignment of the text|
-|defaultTextStyle|TextStyle|null|The style of the text outside the tags|
-|tags|List of TagHighlight|const []|The list of your tags and their style|
+| Name             | Type                 | Default Value  | Description                            |
+| ---------------- | -------------------- | -------------- | -------------------------------------- |
+| text             | String               | ""             | The text to highlight                  |
+| textAlign        | TextAlign            | TextAlign.left | The alignment of the text              |
+| defaultTextStyle | TextStyle            | null           | The style of the text outside the tags |
+| tags             | List of TagHighlight | const []       | The list of your tags and their style  |
 
-* Summary of all the available arguments inside TagHighlight class
+- Summary of all the available arguments inside TagHighlight class
 
-|Name|Type|Default Value|Description|
-|----|----|-------------|-----------|
-|tagName|String|null, but @required|The name of the tag|
-|textStyle|TextStyle|null|The style of the text inside the tag|
+| Name      | Type      | Default Value       | Description                          |
+| --------- | --------- | ------------------- | ------------------------------------ |
+| tagName   | String    | null, but @required | The name of the tag                  |
+| textStyle | TextStyle | null                | The style of the text inside the tag |
 
 As a reminder, if you do not define a text style, the default color of a text is white.
 
