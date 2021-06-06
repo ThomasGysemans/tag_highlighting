@@ -17,7 +17,7 @@ It's very easy to install :
 
 ```yaml
 dependencies:
-  tag_highlighting: ^0.0.1
+  tag_highlighting: ^0.0.2
 ```
 
 - Don't forget to update the modifications of the pubspec.yaml file
